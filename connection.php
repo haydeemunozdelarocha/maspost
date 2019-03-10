@@ -1,5 +1,6 @@
 <?php
-$db = new mysqli('localhost', $_ENV["MASPOST_DB_USER"], $_ENV["MASPOST_DB_PASSWORD"], "maspost");
+
+$db = new mysqli('107.180.40.152', 'appmasuser', 'Myapp11!', "maspost");
 
 if (!$db) {
     echo "Error: No se pudo conectar a MySQL." . PHP_EOL;

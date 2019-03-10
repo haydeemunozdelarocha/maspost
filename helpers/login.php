@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once('../connection.php');
-require '../vendor/password_compat-master/lib/password.php';
+require_once ('../vendor/ircmaxell/password-compat/lib/password.php');
 
 if (array_key_exists("email", $_POST) && array_key_exists("password", $_POST)) {
       $email = mysqli_real_escape_string($db, $_POST["email"]);
@@ -26,7 +26,7 @@ if (array_key_exists("email", $_POST) && array_key_exists("password", $_POST)) {
               header("Location: /home.php");
             }
           } else {
-            echo"<script>window.location=\"index.php\"; alert(\"Usuario o contraseña incorrecta.\");</script>";
+            echo"<script>window.location=\"../index.php\"; alert(\"Usuario o contraseña incorrecta.\");</script>";
             return;
           }
         }

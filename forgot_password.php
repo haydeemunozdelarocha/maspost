@@ -6,7 +6,7 @@ include './helpers/is_logged_in.php';
 if ($logged_in) {
   include './helpers/get_user_info.php';
 }
-require './vendor/PHPMailer/PHPMailerAutoload.php';
+require_once ('./vendor/ircmaxell/password-compat/lib/password.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 date_default_timezone_set('America/Denver');

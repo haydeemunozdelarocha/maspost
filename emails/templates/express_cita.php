@@ -1,4 +1,5 @@
 <?php
+include './emails/new_email.php';
 include "checar_sesion_usuario.php";
 
 $emailU=$_SESSION['emailU'];

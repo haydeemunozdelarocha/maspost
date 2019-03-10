@@ -1,5 +1,7 @@
 {
     "require": {
-        "aws/aws-sdk-php": "^3.31"
+        "aws/aws-sdk-php": "^3.31",
+        "ircmaxell/password-compat": "^1.0",
+        "phpmailer/phpmailer": "^6.0"
     }
 }
